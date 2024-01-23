@@ -32,8 +32,10 @@ describe('c-java-script-dynamic-component', () => {
 
         // Make assertions
         // TODO: this is not working properly, needs investigation
-        // const contactTileEl = element.shadowRoot.querySelector('c-contact-tile');
-        // expect(contactTileEl).not.toBe(null);
+        const contactTileEl = element.shadowRoot.querySelector(
+            '[data-id-dynamic-cmp="c-contact-tile"]'
+        );
+        expect(contactTileEl).not.toBe(null);
         expect(1).toBe(1);
     });
 
